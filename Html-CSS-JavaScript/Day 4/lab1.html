@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .black-border{
+            border-color: black;
+        }
+        .red-border{
+            border-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="validate(event)">
+        <section>
+            <label>Email:</label>
+            <input type="text" id="email" class="black-border">
+        </section>
+        <section>
+            <label>Mobile:</label>
+            <input type="text" id="mobile" class="black-border">
+        </section>
+        <section>
+            <label>Credit card:</label>
+            <input type="text" id="creditCard" class="black-border">
+        </section>
+        <section>
+            <label>Credit card numbers are:</label>
+            <textarea cols="10" rows="5" id="creditTextArea"></textarea>
+        </section>
+        <button onclick="this.submit">Validate</button>
+    </form>
+    <script>
+        function validate(event){
+            event.preventDefault()
+            var email = document.getElementById("email")
+            var mobile = document.getElementById("mobile")
+            var creditCard = document.getElementById("creditCard")
+            var res = true
+            email.className = "black-border"
+            mobile.className = "black-border"
+            creditCard.className = "black-border"
+
+            try{
+                validateEmail(email.value)
+            }
+            catch(err){
+                email.className = "red-border"
+                res = false
+            }
+            try{
+                validatePhone(mobile.value)
+            }
+            catch(err){
+                mobile.className = "red-border"
+                res = false
+            }
+            try{
+                validateCreditCard(creditCard.value)
+            }
+            catch(err){
+                creditCard.className = "red-border"        
+                res = false
+            }
+            if(res==true)
+                result()
+        }
+        function result(){
+            var creditCard = document.getElementById("creditCard")
+            var numbers = creditCard.value.split("-");
+            numbers.forEach(element => {
+                document.getElementById("creditTextArea").value += element+'\n'
+            });
+        }
+        function validateEmail(email){
+            var pattern = new RegExp("[a-z].+@[a-z].+\.[a-z].*","i")
+            if(!pattern.test(email))
+                throw "Invalid Email"
+        }
+        function validatePhone(phone){
+            var pattern = new RegExp("01[012][0-9]{8}")
+            if(!pattern.test(phone))
+                throw "Invalid phone"
+        }
+        function validateCreditCard(creditnum){
+            var pattern = new RegExp("([0-9]{4}-){3}[0-9]{4}")
+            if(!pattern.test(creditnum))
+                throw "Invalid Credit card number"
+        }
+
+    </script>
+</body>
+
+</html>

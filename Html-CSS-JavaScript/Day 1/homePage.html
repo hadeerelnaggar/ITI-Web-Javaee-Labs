@@ -1,0 +1,121 @@
+<!Doctype html5>
+<html>
+	<head>
+		<link id="pageTheme" rel="stylesheet" href="theme1.css">
+		<style>
+			a:link{
+				color: aliceblue;
+			}
+			header{ 
+			  background: url("https://images.pexels.com/photos/1040499/pexels-photo-1040499.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") no-repeat center center; 
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+			  color: white;
+			  padding: 60;
+			  background: rgba(black,0.5);
+			  height: max-content;
+			}
+			main{
+				padding: 20px;
+			}
+			button{
+				background-color: #03A9F4;
+				border-radius: 10px;
+				padding: 10px;
+			}
+			.lightblue{
+				background-color: #03A9F4;
+				color: white;
+				width: fit-content;
+				padding: 0px 7px 0px 7px;
+				border-radius: 5px;
+				margin: 5px;
+			}
+			.grid-container{
+				display: inline-grid;
+				grid-template-columns: auto auto auto;
+				flex-direction: row;
+				grid-column-start: 1;
+				grid-column-end: 3;
+			}
+		</style>
+		<script>
+			function changeCss(){
+				var pageTheme  = document.getElementsByTagName('link')[0];
+				if(pageTheme.getAttribute("href") == "theme1.css"){
+					pageTheme.setAttribute('href','theme2.css')
+				}
+				else{
+					pageTheme.setAttribute('href','theme1.css');
+				}
+			}
+		</script>
+	</head>
+  <body>
+    <header>
+		<figure style="float: left;">
+			<img src="D:\photo1\AEXK1700.JPG" alt="my personal photo" height="300" width="200">
+		</figure>
+			<h1>Hadeer Ashraf Elnaggar</h1>
+			<h5>Email: <a href="mailto:hadeerelnaggar@hotmail.com">hadeerelnaggar@hotmail.com</a></h5>
+			<h5>Github: <a href="https://www.github.com/hadeerelnaggar">www.github.com/hadeerelnaggar</a></h5>
+	</header>
+	<main>
+	<section align="left" style="color: #455A64;">
+		<table>
+			<br>
+			<tr align="left">
+				<td><h3>My Personal Data</h3></td>
+				<td><p>I graduated from faculty of <b>computer and artificial intelligence, cairo university</b> in the year of <i>2020</i></p></td>
+			</tr>
+			<br>
+			<tr align="left">
+				<td><h3>My Intrests</h3></td>
+				<td><p>I am intrested in working as a <b><i>java <u>backend</u> developer</i></b> and I am also flexible in working with any other other <strike>technologies</strike></p></td>
+			</tr>
+			<br>
+			<tr align="left">
+				<td><h3>My Plans</h3></td>
+				<td><p>My plans is to work abroad without migration</p></td>
+			</tr>
+			<tr>
+				<td>
+					<button onclick="changeCss()">change theme</button>
+				</td>
+			</tr>
+		</table>
+		<h2>Skills</h2>
+	<section class="grid-container">
+		<div class="lightblue">
+			<p>Java</p>
+		</div>	
+		<div class="lightblue">
+			<p>Android</p>
+		</div>
+		<div class="lightblue">
+			<p>js/nodejs</p>
+		</div>	
+		<div class="lightblue">
+			<p>html</p>
+		</div><div class="lightblue">
+			<p>css</p>
+		</div>
+		<div class="lightblue">
+			<p>c/c++</p>
+		</div>
+		<div class="lightblue">
+			<p>reactjs</p>
+		</div>
+		<div class="lightblue">
+			<p>maven</p>
+		</div>
+		<div class="lightblue">
+			<p>docker</p>
+		</div>
+	</section>
+	
+	</main>
+  </body>
+</html>

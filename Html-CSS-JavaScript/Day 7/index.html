@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="formSection">
+            <form>
+                <section>
+                    <label><b>First name</b></label>
+                    <input type="text" id="fName" value="">
+                </section>
+                <section>
+                    <label><b>last name</b></label>
+                    <input type="text" id="lName" value="">
+                </section>
+                <section>
+                    <label><b>Birth date</b></label>
+                    <input type="date" id="birthdate" value="">
+                </section>
+                <section>
+                    <label><b>department</b></label>
+                    <input type="text" id="dept" value="">
+                </section>
+                <button class="btn" id="addButton" onclick="addStudent(event)">Add</button>
+            </form>
+        </section>
+        <section>
+            <table id="studentsTable" class="table">
+                <tr>
+                    <th>ID</th>
+                    <th>Full Name</th>
+                    <th>Age</th>
+                    <th>Department</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                </tr>
+            </table>
+        </section>
+        <script src="index.js"></script>
+    </body>
+</html>

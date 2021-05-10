@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            do{
+                var firstNumber = prompt("Please enter first number")
+                if(isNaN(firstNumber)){
+                    alert('invalid input')
+                }
+            }while(isNaN(firstNumber))
+            do{
+                var secondNumber = prompt("Please enter second number")
+                if(isNaN(secondNumber)){
+                    alert('invalid input')
+                }
+            }while(isNaN(secondNumber))
+            do{
+                var thirdNumber = prompt("Please enter third number")
+                if(isNaN(thirdNumber)){
+                    alert('invalid input')
+                }
+            }while(isNaN(thirdNumber))
+            var minNumber = Math.min(firstNumber,secondNumber,thirdNumber);
+            var maxNumber = Math.max(firstNumber,secondNumber,thirdNumber);
+            document.write("<p>First Number:"+firstNumber+"</P>"
+                +"<br>"
+                +"<p>Second number:"+secondNumber+"</p>"
+                +"<br>"
+                +"<p>Third number:"+thirdNumber+"</p>"
+                +"<br>"
+                +"<p>Min number:"+minNumber+"</p>"
+                +"<br>"
+                +"<p>Max number:"+maxNumber+"</p>")
+            
+        </script>
+    </head>
+</html>

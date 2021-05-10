@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="arg0" type="xs:int"/>
+
+  <xs:element name="numberOne" type="xs:int"/>
+
+  <xs:element name="numberTwo" type="xs:int"/>
+
+  <xs:element name="return" type="xs:int"/>
+</xs:schema>
+

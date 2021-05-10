@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+      <!-- contact List-->
+      <div data-role="page" id="contactList">
+
+        <div data-role="header">
+            <a href="#form" data-role="button" data-icon="plus" data-iconpos="left">Add</a>
+            <h1>Contacts List</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <ul id="contactsList" data-role="listview" data-split-icon="phone" data-split-theme="a" data-inset="true">
+                   
+            </ul>
+        </div><!-- /content -->
+
+    </div><!-- /page -->
+
+    <section data-role="page" id="form">
+        <header data-role="header">
+            <a href="#contactList" data-role="button" data-icon="arrow-l">Back</a>
+            <h1>New Contact</h1>
+        </header>
+        <form data-role="content">
+            Name <input type="text" id="username" />
+            </br>
+            </br>
+            </br>
+            Phone <input type="tel" id="telephone" />
+            </br>
+            </br>
+            </br>
+            Email <input type="email" id="email" />
+            </br>
+            </br>
+            </br>
+            Gender <input type="text" id="gender" />
+            </br>
+            </br>
+            </br>
+            <input type="button" href="#contactList" value="Save" id="save" class="btn"></input>
+
+            <input type="reset" value="Cancel" class="btn"></input>
+        </form>
+
+        <footer data-role="footer">
+            <a href="#thirdpage">Contact list</a>
+        </footer>
+    </section>
+
+
+<!---profile--->
+    <section data-role="page" id="profile">
+        <header data-role="header">
+            <h1 id="userName">User name</h1>
+            <a href="#contactList" data-role="content" data-icon="arrow-l">Back</a>
+        </header>
+
+        <div data-role="content">
+            <img src="profilepic.jpg" width="300" height="400" alig="center" />
+            <br />
+            <button id="deleteBtn" data-icon="delete" href="#deleteContact" data-rel="popup" data-position-to="window" data-transition="fade"></button>
+            <button  data-icon="edit"></button>
+            <button  data-icon="phone" id="phoneNumber"></button>
+        </div>
+        <footer data-role="footer">
+            <h1>Contact List</h1>
+        </footer>
+    </section>
+
+    <div id="deleteContact" data-role="popup">
+        <h3>Are you sure you want to delete</h3>
+        <a  data-role="button" id="yes">Yes</a>
+        <a href="#profile" data-role="button">No</a>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>

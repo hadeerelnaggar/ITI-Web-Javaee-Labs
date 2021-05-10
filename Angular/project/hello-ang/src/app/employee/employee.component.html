@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header" *ngIf="getEmployeeCounter()>0">
+            Hello {{employee.FirstName}} , students under 20 years are  <span [class.bg-success]="getEmployeeCounter()<=3"
+                [class.bg-danger]="getEmployeeCounter()>3"> {{getEmployeeCounter()}}</span>
+        </div>
+        <div class="card-header" *ngIf="getEmployeeCounter()==0">
+            Hello {{employee.FirstName}} ,no tasks found
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-8">
+                    <input type="text" #inputName placeholder="Enter Employee name" class="form-control">
+                    <br>
+                    <input type="text" #inputLastName placeholder="Enter Employee last name" class="form-control">
+                    <br>
+                    <input type="text" #inputEmail placeholder="Enter Employee email" class="form-control">
+                    <br>
+                    <input type="number" #inputAge placeholder="Enter Employee Age" class="form-control">
+                    <br>
+                    <input type="number" #inputMobile placeholder="Enter Employee mobile" class="form-control">
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-primary"
+                        (click)="addEmployee(inputName.value,inputLastName.value,inputEmail.value,inputAge.value,inputMobile.value)">Add
+                        Employee</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Full Name</th>
+                            <th>Age</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let item of employees;let currentIndex=index">
+                            <td>{{currentIndex+1}}</td>
+                            <td> {{item.Name}} -- {{item.ID}}</td>
+                            <td>
+                                <input [(ngModel)]="item.Age" type="text">
+                            </td>
+                            <td>
+                                <button (click)="deleteEmployee(currentIndex)" type="button" class="btn btn-danger">DELETE</button>
+                            </td>
+
+                          </tr>
+                         
+                         
+                        </tbody>
+                      </table>
+                </div>
+
+            </div>
+        </div>
+    </div>

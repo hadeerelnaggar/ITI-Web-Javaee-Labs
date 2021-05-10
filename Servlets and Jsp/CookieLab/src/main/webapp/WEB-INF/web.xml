@@ -1,0 +1,29 @@
+<web-app xmlns = "https://jakarta.ee/xml/ns/jakartaee"
+xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation= "https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+version = "5.0" metadata-complete = "true">
+
+<context-param>
+	<param-name>country</param-name>
+	<param-value>Egypt</param-value>
+</context-param>
+<servlet>
+	<servlet-name>CookieAdder</servlet-name>
+	<servlet-class>iti.gov.hadeer.CookieAdder</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>CookieAdder</servlet-name>
+	<url-pattern>/addcookie</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>CookieChecker</servlet-name>
+	<servlet-class>iti.gov.hadeer.CookieChecker</servlet-class>
+	
+</servlet>
+<servlet-mapping>
+	<servlet-name>CookieChecker</servlet-name>
+	<url-pattern>/checkcookie</url-pattern>
+</servlet-mapping>
+
+
+</web-app>

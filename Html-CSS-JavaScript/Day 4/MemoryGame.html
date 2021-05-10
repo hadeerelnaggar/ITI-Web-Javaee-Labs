@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .grid {
+            width: 90%;
+            height: 300px;
+            display: grid;
+            margin: 10px auto;
+            grid-column-start: 1;
+			grid-column-end: 3;
+            grid-template-columns: 0fr 0fr 0fr 2fr;
+        }
+
+        .grid img {
+            margin: 2px;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+            width: 150px;
+            height: 150px;
+        }
+
+        .grid img.flip {
+            transform: rotateY(180deg);
+        }
+
+        .popup {
+            background: red;
+            width: 200px;
+            height: 200px;
+            z-index: 20;
+            position: fixed;
+            top: 100px;
+            left: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="score">Score: <span class="scoreBoard">0</span></section>
+        <div class="grid">
+            
+        </div>
+
+    </div>
+    <div class="Memory card">
+        <img class="front">
+        <img class="back">
+    </div>
+    <script  src="memorygame.js">
+       
+    </script>
+</body>
+
+</html>

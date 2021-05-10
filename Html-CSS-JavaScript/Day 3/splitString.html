@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form onsubmit="splitString(event)">
+        <label>Enter a sentence to split into words</label>
+        <input type="text" id="sentence">
+        <label>Split by</label>
+        <input type="text" id="delimiter">
+        <input type="submit">
+    </form>
+    <br>
+    <section>
+    <label>The sentence is split into this word</label>
+</section>
+    <textarea id="result" rows="6" cols="20"></textarea>
+    <label>The first 10 characters are:</label>
+    <input type="text" id="first10">
+    <script>
+        function splitString(e){
+            e.preventDefault()
+            var sentence = document.getElementById("sentence").value
+            var delimiter = document.getElementById("delimiter").value
+            if(sentence.length==0 || delimiter.length==0){
+                alert("Please enter a value")
+                return false;
+            }
+            var strings = sentence.split(delimiter)
+            
+            strings.forEach(function(item,index){
+                document.getElementById("result").value+= item+'\n'
+            })
+            document.getElementById("first10").value = sentence.substring(0,10)
+        }
+    </script>
+</body>
+
+</html>

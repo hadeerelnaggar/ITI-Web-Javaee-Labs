@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            document.write("<h1>Factorial of 1 to 10</h1>"+
+            "<button onclick=\"showalert()\">get factorial</button>")
+            document.write("<table>")
+            for(var i = 1;i<=10;i++){
+                num = factorial(i);
+                document.write("<tr> <td>"+i+"</td>"+ 
+                    "<td>"+num+"</td>"
+                    +"</tr>")
+            }
+            document.write("</table>")
+            function factorial(number){
+                if(number == 1){
+                    return 1;
+                }
+                if(number == 0)
+                    return 0;
+                return number*factorial(number-1);
+            }
+            function showalert(){
+                var numm = prompt("Enter number");
+                if(isNaN(numm) ||numm < 0){
+                    alert("Invalid input")
+                }
+                var res = factorial(numm)
+                alert(res)
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

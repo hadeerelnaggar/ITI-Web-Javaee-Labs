@@ -1,0 +1,31 @@
+GET http://localhost:1919/REST-lab1/api/employees HTTP/1.1
+Accept: application/json
+
+###
+GET http://localhost:1919/REST-lab1/api/employees/13 HTTP/1.1
+Accept: application/json
+###
+POST http://localhost:1919/REST-lab1/api/employees HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "firstName": "hadora",
+    "email": "hadeer@jdks.cjdk",
+    "lastName": "elnaggar",
+    "age": 22
+}
+####
+PUT http://localhost:1919/REST-lab1/api/employees/13 HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "firstName": "dardora",
+    "email": "hadeer@jdks.cjdk",
+    "lastName": "elnaggar",
+    "age": 22
+}
+####
+DELETE http://localhost:1919/REST-lab1/api/employees/12 HTTP/1.1
+Accept: application/json

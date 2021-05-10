@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:outputLabel value="Voting results"/>
+    <h:dataTable value="#{listBean.categories}" var="c">
+        <h:column>
+            #{c.categoryLabel}
+        </h:column>
+        <h:column>
+            #{c.categoryVotes}
+        </h:column>
+    </h:dataTable>
+    <h:commandButton value="Refresh" action="Results" id="ref"/>
+<!--        <f:ajax render=""/>-->
+</f:view>
+</html>

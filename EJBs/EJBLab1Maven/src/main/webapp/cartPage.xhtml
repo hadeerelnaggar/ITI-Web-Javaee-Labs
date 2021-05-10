@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h1>Cart</h1>
+        <table>
+            <h:dataTable value="#{cartManagedBean.contents}" var="book">
+                <tr>
+                    <h:column>
+                        #{book}
+                    </h:column>
+                    <h:column>
+                        <h:form>
+                            <h:commandButton value="Delete book" action="#{cartManagedBean.removeBook(book)}"/>
+                        </h:form>
+                    </h:column>
+                </tr>
+            </h:dataTable>
+        </table>
+        <h:form>
+            <h:inputText value="#{cartManagedBean.content}"/>
+            <h:commandButton value="Add New Book" action="#{cartManagedBean.addContent()}"/>
+        </h:form>
+        <h:form>
+            <h:commandButton value="Empty Cart" action="#{cartManagedBean.removeAll()}"/>
+        </h:form>
+
+
+
+    </h:body>
+</html>
+

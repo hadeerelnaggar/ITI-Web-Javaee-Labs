@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:body>
+        <h:form>
+            <h:selectOneRadio value="#{voteBean.chosen}">
+                <f:selectItems value="#{listBean.categories}" var="c"
+                               itemLabel="#{c.categoryLabel}" itemValue="#{c.categoryValue}"/>
+            </h:selectOneRadio>
+            <h:commandButton value="Vote" action="#{voteBean.voteButtonBack()}" disabled="#{voteBean.votes}"/>
+        </h:form>
+    </h:body>
+</f:view>
+</html>

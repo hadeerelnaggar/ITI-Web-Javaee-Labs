@@ -1,0 +1,108 @@
+
+POST http://localhost:1919/SOAP-Lab1/ws/EmployeeCruds HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:jets="http://hadeer.iti/">
+    
+    <soap:Body>
+        <jets:getEmployee>
+            <arg0>2</arg0>
+        </jets:getEmployee>
+    </soap:Body>
+
+</soap:Envelope>
+
+###
+
+POST http://localhost:1919/SOAP-Lab1/ws/EmployeeCruds HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    
+    <soap:Body>
+        <emp:addEmployee xmlns:emp="http://hadeer.iti/">
+            <arg0>
+                    <age>7</age>
+                    <email>farah@hhh.com</email>
+                    <firstName>farah</firstName>
+                    <lastName>walid</lastName>
+            </arg0>
+        </emp:addEmployee>
+    </soap:Body>
+
+</soap:Envelope>
+
+###
+POST http://localhost:1919/SOAP-Lab1/ws/EmployeeCruds HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    
+    <soap:Body>
+        <emp:updateEmployee xmlns:emp="http://hadeer.iti/">
+            <arg0>
+                    2
+            </arg0>
+            <arg1>
+                <age>7</age>
+                <email>hadeer@hhh.com</email>
+                <firstName>kkkk</firstName>
+                <lastName>elnaggar</lastName>
+            </arg1>
+        </emp:updateEmployee>
+    </soap:Body>
+
+</soap:Envelope>
+
+###
+
+POST http://localhost:1919/SOAP-Lab1/ws/EmployeeCruds HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    
+    <soap:Body>
+        <emp:deleteEmployee xmlns:emp="http://hadeer.iti/">
+            <arg0>
+                    3
+            </arg0>
+        </emp:deleteEmployee>
+    </soap:Body>
+
+</soap:Envelope>
+
+
+###
+# ERROR -> what is even "jets" prefix mean !?
+POST http://localhost:1919/SOAP-Lab1/ws/EmployeeCruds HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    
+    <soap:Body>
+        <jets:getEmployee>
+            <arg0>3</arg0>
+        </jets:getEmployee>
+    </soap:Body>
+
+</soap:Envelope>
+
+###
+# ERROR -> No way to find out where is this add method
+POST http://localhost:1919/SOAP-Lab1/ws/EmployeeCruds HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    
+    <soap:Body>
+        <getEmployee>
+            <arg0>33</arg0>
+            <arg1>33</arg1>
+        </getEmployee>
+    </soap:Body>
+
+</soap:Envelope>
+
+

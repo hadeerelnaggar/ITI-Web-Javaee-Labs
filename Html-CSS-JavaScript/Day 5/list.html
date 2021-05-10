@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <form id="form">
+        <section>
+            <label>Your favorite browser is:</label>
+            <input type="text" id="yourFavoriteBrowser">
+        </section>
+        <section></section>
+        <label>Select your favorite browser</label>
+        <select id="browsersList">
+            <option value="Choose one" selected disabled>Choose one</option>
+        </select>
+        </section>
+        <section>
+            <button onclick="add(event)">Add</button>
+            <button onclick="deleteBrowser(event)">Delete</button>
+        </section>
+    </form>
+    <script>
+        var browsersList = document.getElementById("browsersList");
+        var yourFavoriteBrowser = document.getElementById("yourFavoriteBrowser")
+        browsersList.addEventListener("change", (e) => {
+            browsersList.options[0].enabled = false
+            if (browsersList.selectedIndex == 0) {
+                yourFavoriteBrowser.value = ""
+            }
+            else {
+                yourFavoriteBrowser.value = browsersList.options[browsersList.selectedIndex].text
+            }
+        })
+        function add(e) {
+            yourFavoriteBrowser.style = "border-color: black"
+            e.preventDefault()
+            if (yourFavoriteBrowser.value.length == 0) {
+                yourFavoriteBrowser.style = "border-color: red"
+                return
+            }
+            browsersList.innerHTML += "<option value=" + yourFavoriteBrowser.value + ">" + yourFavoriteBrowser.value + "</option>"
+        }
+        function deleteBrowser(e) {
+            e.preventDefault()
+            if (browsersList.selectedIndex != 0) {
+                browsersList.remove(browsersList.selectedIndex)
+            }
+        }
+    </script>
+</body>
+
+</html>

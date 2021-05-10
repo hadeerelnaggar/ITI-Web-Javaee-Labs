@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="iti.hadeer.ServiceTest" time="1.682" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Hadeer\Desktop\iti\SOAPwebservices\lab2 client\target\test-classes;C:\Users\Hadeer\Desktop\iti\SOAPwebservices\lab2 client\target\classes;C:\Users\Hadeer\.m2\repository\jakarta\xml\ws\jakarta.xml.ws-api\3.0.0\jakarta.xml.ws-api-3.0.0.jar;C:\Users\Hadeer\.m2\repository\jakarta\xml\soap\jakarta.xml.soap-api\2.0.0\jakarta.xml.soap-api-2.0.0.jar;C:\Users\Hadeer\.m2\repository\jakarta\jws\jakarta.jws-api\3.0.0\jakarta.jws-api-3.0.0.jar;C:\Users\Hadeer\.m2\repository\com\sun\xml\ws\jaxws-rt\3.0.0\jaxws-rt-3.0.0.jar;C:\Users\Hadeer\.m2\repository\org\glassfish\ha\ha-api\3.1.12\ha-api-3.1.12.jar;C:\Users\Hadeer\.m2\repository\org\glassfish\external\management-api\3.2.3\management-api-3.2.3.jar;C:\Users\Hadeer\.m2\repository\org\glassfish\gmbal\gmbal-api-only\4.0.2\gmbal-api-only-4.0.2.jar;C:\Users\Hadeer\.m2\repository\org\jvnet\staxex\stax-ex\2.0.0\stax-ex-2.0.0.jar;C:\Users\Hadeer\.m2\repository\com\sun\xml\stream\buffer\streambuffer\2.0.1\streambuffer-2.0.1.jar;C:\Users\Hadeer\.m2\repository\org\jvnet\mimepull\mimepull\1.9.13\mimepull-1.9.13.jar;C:\Users\Hadeer\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\2.0.0\FastInfoset-2.0.0.jar;C:\Users\Hadeer\.m2\repository\com\sun\mail\jakarta.mail\2.0.0\jakarta.mail-2.0.0.jar;C:\Users\Hadeer\.m2\repository\com\sun\xml\messaging\saaj\saaj-impl\2.0.0\saaj-impl-2.0.0.jar;C:\Users\Hadeer\.m2\repository\com\fasterxml\woodstox\woodstox-core\6.2.1\woodstox-core-6.2.1.jar;C:\Users\Hadeer\.m2\repository\org\codehaus\woodstox\stax2-api\4.2.1\stax2-api-4.2.1.jar;C:\Users\Hadeer\.m2\repository\com\sun\activation\jakarta.activation\2.0.0\jakarta.activation-2.0.0.jar;C:\Users\Hadeer\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.0.0\jakarta.annotation-api-2.0.0.jar;C:\Users\Hadeer\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\3.0.0\jakarta.xml.bind-api-3.0.0.jar;C:\Users\Hadeer\.m2\repository\com\sun\xml\bind\jaxb-impl\3.0.0\jaxb-impl-3.0.0.jar;C:\Users\Hadeer\.m2\repository\com\sun\xml\bind\jaxb-core\3.0.0\jaxb-core-3.0.0.jar;C:\Users\Hadeer\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.3.1\junit-jupiter-engine-5.3.1.jar;C:\Users\Hadeer\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\Hadeer\.m2\repository\org\junit\platform\junit-platform-engine\1.3.1\junit-platform-engine-1.3.1.jar;C:\Users\Hadeer\.m2\repository\org\junit\platform\junit-platform-commons\1.3.1\junit-platform-commons-1.3.1.jar;C:\Users\Hadeer\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\Hadeer\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.3.1\junit-jupiter-api-5.3.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Africa/Cairo"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.9\bin"/>
+    <property name="sun.java.command" value="C:\Users\Hadeer\AppData\Local\Temp\surefire15088661025426007479\surefirebooter10148807719923438914.jar C:\Users\Hadeer\AppData\Local\Temp\surefire15088661025426007479 2021-03-28T15-23-06_563-jvmRun1 surefire2332286284909778874tmp surefire_07472581354845785883tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Hadeer\Desktop\iti\SOAPwebservices\lab2 client\target\test-classes;C:\Users\Hadeer\Desktop\iti\SOAPwebservices\lab2 client\target\classes;C:\Users\Hadeer\.m2\repository\jakarta\xml\ws\jakarta.xml.ws-api\3.0.0\jakarta.xml.ws-api-3.0.0.jar;C:\Users\Hadeer\.m2\repository\jakarta\xml\soap\jakarta.xml.soap-api\2.0.0\jakarta.xml.soap-api-2.0.0.jar;C:\Users\Hadeer\.m2\repository\jakarta\jws\jakarta.jws-api\3.0.0\jakarta.jws-api-3.0.0.jar;C:\Users\Hadeer\.m2\repository\com\sun\xml\ws\jaxws-rt\3.0.0\jaxws-rt-3.0.0.jar;C:\Users\Hadeer\.m2\repository\org\glassfish\ha\ha-api\3.1.12\ha-api-3.1.12.jar;C:\Users\Hadeer\.m2\repository\org\glassfish\external\management-api\3.2.3\management-api-3.2.3.jar;C:\Users\Hadeer\.m2\repository\org\glassfish\gmbal\gmbal-api-only\4.0.2\gmbal-api-only-4.0.2.jar;C:\Users\Hadeer\.m2\repository\org\jvnet\staxex\stax-ex\2.0.0\stax-ex-2.0.0.jar;C:\Users\Hadeer\.m2\repository\com\sun\xml\stream\buffer\streambuffer\2.0.1\streambuffer-2.0.1.jar;C:\Users\Hadeer\.m2\repository\org\jvnet\mimepull\mimepull\1.9.13\mimepull-1.9.13.jar;C:\Users\Hadeer\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\2.0.0\FastInfoset-2.0.0.jar;C:\Users\Hadeer\.m2\repository\com\sun\mail\jakarta.mail\2.0.0\jakarta.mail-2.0.0.jar;C:\Users\Hadeer\.m2\repository\com\sun\xml\messaging\saaj\saaj-impl\2.0.0\saaj-impl-2.0.0.jar;C:\Users\Hadeer\.m2\repository\com\fasterxml\woodstox\woodstox-core\6.2.1\woodstox-core-6.2.1.jar;C:\Users\Hadeer\.m2\repository\org\codehaus\woodstox\stax2-api\4.2.1\stax2-api-4.2.1.jar;C:\Users\Hadeer\.m2\repository\com\sun\activation\jakarta.activation\2.0.0\jakarta.activation-2.0.0.jar;C:\Users\Hadeer\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.0.0\jakarta.annotation-api-2.0.0.jar;C:\Users\Hadeer\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\3.0.0\jakarta.xml.bind-api-3.0.0.jar;C:\Users\Hadeer\.m2\repository\com\sun\xml\bind\jaxb-impl\3.0.0\jaxb-impl-3.0.0.jar;C:\Users\Hadeer\.m2\repository\com\sun\xml\bind\jaxb-core\3.0.0\jaxb-core-3.0.0.jar;C:\Users\Hadeer\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.3.1\junit-jupiter-engine-5.3.1.jar;C:\Users\Hadeer\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\Hadeer\.m2\repository\org\junit\platform\junit-platform-engine\1.3.1\junit-platform-engine-1.3.1.jar;C:\Users\Hadeer\.m2\repository\org\junit\platform\junit-platform-commons\1.3.1\junit-platform-commons-1.3.1.jar;C:\Users\Hadeer\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\Hadeer\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.3.1\junit-jupiter-api-5.3.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Hadeer"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-10-20"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.9"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Hadeer\Desktop\iti\SOAPwebservices\lab2 client"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Hadeer\AppData\Local\Temp\surefire15088661025426007479\surefirebooter10148807719923438914.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.9+7-LTS"/>
+    <property name="user.name" value="Hadeer"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\Hadeer\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Hadeer\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.9"/>
+    <property name="user.dir" value="C:\Users\Hadeer\Desktop\iti\SOAPwebservices\lab2 client"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.9\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-11.0.9\bin;C:\DevTools\programs\JAXB\jaxb-ri\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files (x86)\VMware\VMware Workstation\bin\;&quot;;C:\Program Files (x86)\Common Files\Oracle\Java\javapath&quot;;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Users\Hadeer\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Brackets\command;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\nodejs\;C:\Users\Hadeer\Desktop\deeplearning\venv\Scripts;C:\Program Files\Dart\dart-sdk\bin;C:\WINDOWS\System32\OpenSSH\;C:\DevTools\programs\apache-maven-3.6.3\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Hadeer\AppData\Local\Microsoft\WindowsApps;C:\Users\Hadeer\AppData\Local\GitHubDesktop\bin;C:\Users\Hadeer\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Hadeer\AppData\Roaming\npm;C:\src\flutter\bin;C:\Program Files\heroku\bin;C:\Users\Hadeer\AppData\Local\Microsoft\WindowsApps;C:\DevTools\programs\JAXB\jaxb-ri\bin;;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.9+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="getExistedEmployee" classname="iti.hadeer.ServiceTest" time="0.115"/>
+  <testcase name="getNonExistingEmployee" classname="iti.hadeer.ServiceTest" time="0.008"/>
+  <testcase name="addEmployee" classname="iti.hadeer.ServiceTest" time="0.199">
+    <system-out><![CDATA[iti.hadeer.employeeservices.Employee@33aa93c]]></system-out>
+  </testcase>
+  <testcase name="deleteNonExistingEmployee" classname="iti.hadeer.ServiceTest" time="0.009"/>
+  <testcase name="deleteExistingEmployee" classname="iti.hadeer.ServiceTest" time="0.194"/>
+  <testcase name="updateEmployee" classname="iti.hadeer.ServiceTest" time="0.006"/>
+</testsuite>

@@ -1,0 +1,6 @@
+iti\hadeer\models\Task.class
+iti\hadeer\restservices\EmployeeResource.class
+iti\hadeer\restservices\TaskResource.class
+iti\hadeer\repositories\TaskRepo.class
+iti\hadeer\models\Employee.class
+iti\hadeer\repositories\EmployeeRepo.class

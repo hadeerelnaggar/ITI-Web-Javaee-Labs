@@ -1,0 +1,67 @@
+.withborder {
+    border-style: solid;
+    border-color: gray;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.error {
+    color: red;
+}
+
+.red-border {
+    border-color: red;
+}
+
+input[type=text], input[type=email], input[type=number] {
+    width: 40%;
+    padding: 10px;
+    margin: 5px 20px 22px 20px;
+    display: inline-block;
+    background: #f1f1f1;
+}
+
+.select-selected {
+    background-color: DodgerBlue;
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+
+input[type=text]:focus, input[type=date]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+option {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 10px;
+    border-color: gray;
+  }
+
+.button {
+    background-color: #087ba8;
+    color: white;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 10px;
+    text-align: center;
+}

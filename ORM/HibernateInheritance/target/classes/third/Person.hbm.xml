@@ -1,0 +1,16 @@
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping" package="inheritance1">
+    <class name="Person" table="person">
+        <id name="id" column="id">
+            <generator class="increment"></generator>
+        </id>
+        <discriminator column="person_type" type="string"/>
+        <property name="firstName" column="first_name"/>
+        <property name="lastName" column="last_name"/>
+        <subclass name="Student" extends="Person" discriminator-value="Student">
+            <property name="department" column="department"/>
+        </subclass>
+        <subclass name="Teacher" extends="Person" discriminator-value="Teacher">
+            <property name="hireDate" column="hire_date" type="date"/>
+        </subclass>
+    </class>
+</hibernate-mapping>

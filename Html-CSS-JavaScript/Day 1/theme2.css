@@ -1,0 +1,12 @@
+body{ 
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #455A64;
+    padding: 10;
+  }
+p{
+    color: white;
+}

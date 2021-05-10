@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>The string to search in is:</h1>
+        <textarea id="searchstring" rows="10" cols="30"></textarea>
+        <form id="searchForm" onsubmit="getSubstring(event)">
+            <input type="text" placeholder="Enter substring to search for" id="substring">
+            <input type="text" placeholder="At index" id="index">
+            <button onclick="document.getElementById(searchForm).submit()">Search</button> 
+        </form>
+        <section>
+        <label>First occurence located at index:</label>
+        <input type="text" id="first">
+    </section>
+    <section>
+        <label>last occurence located at index:</label>
+        <input type="text" id="second">
+    </section>
+    <section>
+        <label>First occurence from your index located at index:</label>
+        <input type="text" id="third">
+    </section>
+    <section>
+        <label>last occurence from your indexlocated at index:</label>
+        <input type="text" id="forth">
+    </section>
+        <script>
+            function getSubstring(event){
+                event.preventDefault()
+                var text = document.getElementById("searchstring").value
+                var subString = document.getElementById("substring").value
+                var index = document.getElementById("index").value
+                var first = document.getElementById("first")
+                var second = document.getElementById("second")
+                var third = document.getElementById("third")
+                var forth = document.getElementById("forth")
+                if(subString.length == 0 || text.length == 0){
+                    alert("please enter text or substring")
+                    return false;
+                }
+                first.value = text.indexOf(subString)
+                second.value = text.lastIndexOf(subString)
+                if(index.length != 0){
+                    third.value = text.indexOf(subString,index)
+                    forth.value = text.lastIndexOf(subString,index)
+                }
+
+            }
+        </script>
+    </body>
+</html>

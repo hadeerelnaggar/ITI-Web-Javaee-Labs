@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .content{
+				margin: auto;
+				max-width: 300px;
+			}
+            .numdiv{
+                background-color: rgb(84, 199, 219);
+                color: black;
+                font-size: xx-large;
+                font-weight: bold;
+                width: max-content;
+                padding: 10px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                max-width: 50%;
+                border-radius: 5px;
+                
+            }
+            .button{
+                background-color: #03A9F4;
+                border-radius: 5px;
+                border-color: #03A9F4;
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content" >
+            <div class="numdiv">
+                <p id="num"></p>
+            </div>
+            <section>
+            <button class="button" onclick="startGame()">Start game</button>
+        </section>
+        <section>
+            <button class="button" onclick="endGame()">End game</button>
+        </section>
+        </div>
+        <script>
+            var t;
+            var result = 0;
+            var total = 0;
+            function startGame(){
+                console.log("start")
+                clearInterval(t)
+                t = setInterval("generateNumber()",1500)
+            }
+
+            function generateNumber(){
+                console.log("generate")
+                document.removeEventListener('keypress',this)
+                total+=1
+                var random = Math.round(Math.random()*9)
+                document.getElementById("num").innerHTML=random
+                document.addEventListener('keypress',(e)=>{
+                    if(Number.parseInt(e.key) == random){
+                        result += 1
+                    } 
+                    random = -1
+                })
+            }
+
+            function endGame(){
+                if(t==undefined){
+                    alert("Please start the game first")
+                    return
+                }    
+                document.removeEventListener('keypress',this)
+                clearInterval(t)
+                t=undefined
+                alert(result+"/"+total)
+                result = 0
+                total = 0
+            }
+        </script>
+    </body>
+</html>
